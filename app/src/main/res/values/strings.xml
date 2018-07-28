@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">O Contador</string>
+    <string name="titulo">Contas a pagar</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="telefone">Telefone (R$ 30,00)</string>
+    <string name="celular">Celular (R$ 50,00)</string>
+    <string name="luz">Luz (R$ 120,00)</string>
+    <string name="agua">Água (R$ 70,00)</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/cbxAgua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agua"
+        android:tag="70"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbxLuz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/luz"
+        android:tag="120"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxAgua"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbxTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone"
+        android:tag="30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxLuz"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbxCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/celular"
+        android:tag="50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxTelefone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finalizar"
+        app:layout_constraintTop_toBottomOf="@+id/cbxCelular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</android.support.constraint.ConstraintLayout>
